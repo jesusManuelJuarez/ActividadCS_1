@@ -27,7 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['practicaonecs.herokuapp.com']
 
-
+#SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
