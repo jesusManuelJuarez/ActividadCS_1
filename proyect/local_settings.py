@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f*((#x2n^7201z(936x3_s*%f4(4)_4rd330ngi=8q^@*4u3%+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['practicaonecs.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -52,6 +52,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'proyect.urls'
+
+#SITE_ID = 1
 
 TEMPLATES = [
     {
@@ -120,8 +122,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-
-try:
-    from proyect.local_settings import *
-except ImportError:
-    pass
